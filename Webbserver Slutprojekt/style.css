@@ -1,7 +1,13 @@
+@font-face {
+  font-family: Kanit;
+  src: url(kanit-light.otf);
+}
 body{
-    background-color: #725772;
+
+    background-color: #FACC2E;
     height: 100vh;
-    width:100vw;    
+    width:100vw;
+    font-family: kanit;
 }
 
 #wrapper{
@@ -14,7 +20,7 @@ body{
 header{
     line-height: 1.5;
     height:15%;
-    background-color: #a8a8a8;
+    background-color: #B40404;
     text-align: center;
     font-size: 2em;
 }
@@ -48,7 +54,7 @@ li{
 }
 
 li:first-child{
-    margin-left:10px;    
+    margin-left:10px;
 }
 
 li a{
@@ -56,12 +62,12 @@ li a{
     line-height: 2;
     height: 100%;
     width: 100%;
-    background-color: #a8a8a8;
+    background-color: #0B6121;
     text-decoration: none;
 }
 
 li a:link,li a:visited,li a:focus,li a:hover,li a:active{
-	color: purple;
+	color: white;
 }
 
 /**------------*
@@ -157,7 +163,7 @@ label{
     margin-right:5px;
     font-size: larger;
     text-align: right;
-    
+
 }
 
 input[type="text"]{
