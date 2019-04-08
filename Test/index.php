@@ -7,10 +7,7 @@ $res = mysqli_query($db, $sql) or die(mysqli_error());
 
 $posts = "";
 
-
-
  ?>
-
  <!DOCTYPE html>
 
  <html lang="sv">
@@ -33,7 +30,7 @@ $posts = "";
              <li><a href="index.php">Startsida</a></li>
              <li><a href="post.php">Blogg</a></li>
              <li><a href="admin.php">Administration</a></li>
-             <li><a href="">Logga in</a></li>
+             <li><a href="loginpage.php">Logga in</a></li>
          </ul>
      </nav>
 

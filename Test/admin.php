@@ -35,7 +35,7 @@ if(!isset($_SESSION['admin']) && ¤ $_SESSION['admin'] != 1){
              <li><a href="index.php">Startsida</a></li>
              <li><a href="post.php">Blogg</a></li>
              <li><a href="admin.php">Administration</a></li>
-             <li><a href="">Logga in</a></li>
+             <li><a href="loginpage.php">Logga in</a></li>
          </ul>
      </nav>
 
