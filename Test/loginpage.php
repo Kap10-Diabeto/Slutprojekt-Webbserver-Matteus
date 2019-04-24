@@ -27,13 +27,15 @@
     <main>
         <h2>Inloggning</h2>
 
-        <form>
+        <form action="login.php" method="post">
           <label for="username">Användarnamn:</label>
           <input type="text" id="username" name="user"><br><br>
           <label for="password">Lösenord:</label>
           <input type="password" id="password" name="password"><br><br>
           <input type="submit" value="Logga in">
         </form>
+
+        <button type="submit">Logga ut</button>
 
     </main>
 
