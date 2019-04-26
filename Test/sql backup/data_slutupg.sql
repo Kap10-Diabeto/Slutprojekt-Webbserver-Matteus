@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.3
+-- version 4.8.5
 -- https://www.phpmyadmin.net/
 --
--- Värd: 127.0.0.1
--- Tid vid skapande: 24 apr 2019 kl 12:12
--- Serverversion: 10.1.37-MariaDB
--- PHP-version: 7.2.12
+-- Host: 127.0.0.1
+-- Generation Time: Apr 26, 2019 at 03:09 PM
+-- Server version: 10.1.38-MariaDB
+-- PHP Version: 7.3.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,13 +19,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Databas: `data_slutupg`
+-- Database: `data_slutupg`
 --
 
 -- --------------------------------------------------------
 
 --
--- Tabellstruktur `posts`
+-- Table structure for table `posts`
 --
 
 CREATE TABLE `posts` (
@@ -36,7 +36,7 @@ CREATE TABLE `posts` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumpning av Data i tabell `posts`
+-- Dumping data for table `posts`
 --
 
 INSERT INTO `posts` (`id`, `titel`, `content`, `date`) VALUES
@@ -47,7 +47,7 @@ INSERT INTO `posts` (`id`, `titel`, `content`, `date`) VALUES
 -- --------------------------------------------------------
 
 --
--- Tabellstruktur `users`
+-- Table structure for table `users`
 --
 
 CREATE TABLE `users` (
@@ -57,43 +57,44 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumpning av Data i tabell `users`
+-- Dumping data for table `users`
 --
 
 INSERT INTO `users` (`id`, `username`, `password`) VALUES
-(1, 'Kap', 'snap');
+(1, 'Kap', 'snap'),
+(5, 'bajspojken', 'a1a8db834a8f2f2317974e061269bc2c');
 
 --
--- Index för dumpade tabeller
+-- Indexes for dumped tables
 --
 
 --
--- Index för tabell `posts`
+-- Indexes for table `posts`
 --
 ALTER TABLE `posts`
   ADD PRIMARY KEY (`id`,`titel`,`date`);
 
 --
--- Index för tabell `users`
+-- Indexes for table `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT för dumpade tabeller
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT för tabell `posts`
+-- AUTO_INCREMENT for table `posts`
 --
 ALTER TABLE `posts`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 
 --
--- AUTO_INCREMENT för tabell `users`
+-- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

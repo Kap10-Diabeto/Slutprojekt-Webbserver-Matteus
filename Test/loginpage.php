@@ -35,7 +35,8 @@
           <input type="submit" value="Logga in">
         </form>
 
-        <button type="submit">Logga ut</button>
+      <button onclick="window.location.href = 'logout.php';">Logga ut</button>
+      <button onclick="window.location.href = 'register.php';">Registera dig!</button>
 
     </main>
 
