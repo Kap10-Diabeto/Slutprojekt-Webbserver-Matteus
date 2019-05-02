@@ -19,8 +19,8 @@ if(isset($_POST['register'])){
   $c_password = mysqli_real_escape_string($db, $c_password);
 
 
-$password = md5($password);
-$c_password = md5($c_password);
+//$password = md5($password);
+//$c_password = md5($c_password);
 
 $sql_store = "INSERT into users (username, password) VALUES ('$username' , '$password')";
 

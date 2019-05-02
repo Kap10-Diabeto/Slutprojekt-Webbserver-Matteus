@@ -4,8 +4,8 @@ include_once("db.php");
 $sql = "SELECT * FROM posts ORDER BY id DESC";
 $res = mysqli_query($db, $sql) or die(mysqli_error());
 $posts = "";
-if(!isset($_SESSION['admin']) && ¤ $_SESSION['admin'] != 1){
-  header("locaation: login.php");
+if(!isset($_SESSION['admin']) && $_SESSION['admin'] != 1){
+  header("location: loginpage.php");
   return;
 }
 
@@ -49,7 +49,7 @@ if(!isset($_SESSION['admin']) && ¤ $_SESSION['admin'] != 1){
               $titel = $row ['titel'];
               $date = $row ['date'];
 
-              $admin = "<div><a href='del_post.php?pid=$id'>Delete</a>&nbsp;<a href='edit_post.php?pid=$id'>Edit</div>";
+              $admin = "<div><a href='del_post.php?pid=$id'>Radera</a></div>";
 
               $posts .= "<div><h2><a href='view_post.php?pid=$id' target='_blank'>$titel</a></h2><h3>$date</h3>$admin</div>";
 
