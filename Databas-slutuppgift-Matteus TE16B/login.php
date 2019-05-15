@@ -13,8 +13,6 @@
     $username = mysqli_real_escape_string($db, $username);
     $password = mysqli_real_escape_string($db, $password);
 
-    //$password = md5($password);
-    echo $password;
 
     $sql = "SELECT * FROM users WHERE username='$username' LIMIT 1";
     $query = mysqli_query($db, $sql);
